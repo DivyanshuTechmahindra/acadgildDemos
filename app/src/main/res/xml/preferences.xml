@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="ACADGILD PREFRENCE">
+
+        <CheckBoxPreference
+            android:key="cbp_checkbox_preference1"
+            android:title="check box 1"/>
+        <CheckBoxPreference
+            android:key="cbp_checkbox_preference2"
+            android:title="check box 2"/>
+
+        <EditTextPreference
+            android:key="etp_edittext_preference1_title"
+            android:title="Edit text News"/>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Second Category Acadgild">
+
+        <ListPreference
+            android:key="lp_list_preferences"
+            android:title="List preferences Acadgild"
+            android:entries="@array/list"
+            android:entryValues="@array/list2"/>
+
+        <RingtonePreference
+            android:key="rtp_ringtone_preference"
+            android:title="Ringtone Ringa Ringa"/>
+    </PreferenceCategory>
+
+
+    <PreferenceScreen
+        android:title="New Screen">
+        <PreferenceCategory
+            android:title="str_third_category_title">
+            <EditTextPreference
+                android:key="etp_edittext_preference2"
+                android:title="Completely New screen"></EditTextPreference>
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
+</PreferenceScreen>
