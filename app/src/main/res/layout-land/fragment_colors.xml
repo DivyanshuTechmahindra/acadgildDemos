@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtRed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_red"
+        android:gravity="center"
+        android:text="@string/red" />
+
+    <TextView
+        android:id="@+id/txtBlue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_blue"
+        android:gravity="center"
+        android:text="@string/blue"
+        android:visibility="gone" />
+
+</FrameLayout>
