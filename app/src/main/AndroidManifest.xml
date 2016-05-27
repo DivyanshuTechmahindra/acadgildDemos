@@ -79,6 +79,14 @@
         </activity>
 
         <activity android:name=".ContentProvider.ContentProviderExample">
+
+        </activity>
+
+        <activity android:name=".ANR.anr_examle">
+
+        </activity>
+
+        <activity android:name=".HandlerExample.HandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
