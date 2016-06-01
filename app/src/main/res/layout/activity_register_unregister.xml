@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:padding="20dip"
+        android:onClick="registerBroadcastReceiver"
+        android:text="Register Broadcast Receiver"
+        tools:context=".BroadcasrReceivers.RegisterUnregister"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:layout_marginTop="20dip"
+        android:text="Unregister Broadcast Receiver"
+        android:onClick="unregisterBroadcastReceiver"
+        tools:context=".BroadcasrReceivers.RegisterUnregister"/>
+
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="20dip"-->
+        <!--android:layout_marginTop="20dip"-->
+        <!--android:text="Text"-->
+        <!--android:onClick="showNotification"-->
+        <!--tools:context=".BroadcasrReceivers.RegisterUnregister"/>-->
+
+</LinearLayout>

@@ -87,12 +87,23 @@
         </activity>
 
         <activity android:name=".HandlerExample.HandlerActivity">
+
+        </activity>
+
+        <activity android:name=".BroadcasrReceivers.RegisterUnregister">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BroadcasrReceivers.NotificationMessage"></activity>
+        <receiver android:name=".BroadcasrReceivers.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"></action>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
