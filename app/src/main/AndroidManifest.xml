@@ -9,6 +9,16 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
     <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"></uses-feature>
 
     <application
         android:allowBackup="true"
@@ -60,10 +70,13 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAHBDt7a2HtLIh0K5kj-vl7fWHSUt14R4A"></meta-data>
 
-        <activity
-            android:name=".Advertisment"
-            android:label="@string/title_activity_advertisment"></activity> <!-- Include the AdActivity configChanges and theme. -->
+        <!--<activity-->
+            <!--android:name=".Advertisment"-->
+            <!--android:label="@string/title_activity_advertisment"></activity> &lt;!&ndash; Include the AdActivity configChanges and theme. &ndash;&gt;-->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -72,15 +85,15 @@
         <activity android:name=".FragmentExample.FragmentLayout">
 
         </activity>
-        <activity android:name=".FragmentExample.DatailsActivity"></activity>
+        <!--<activity android:name=".FragmentExample.DatailsActivity"></activity>-->
         <activity android:name=".ActionBar.MainActivity"
             >
 
         </activity>
 
-        <activity android:name=".ContentProvider.ContentProviderExample">
+        <!--<activity android:name=".ContentProvider.ContentProviderExample">-->
 
-        </activity>
+        <!--</activity>-->
 
         <activity android:name=".ANR.anr_examle">
 
@@ -107,13 +120,19 @@
 
         <service android:name=".Services.BoundServices.BoundService"></service>
         <activity android:name=".Services.BoundServices.BoundServiceExample">
+
+        </activity>
+
+        <!--<activity android:name=".Webservice.WebseviceExample">-->
+
+        <!--</activity>-->
+        <activity android:name=".GoogleMapsExmplae.MapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
